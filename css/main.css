@@ -1,0 +1,179 @@
+/* strat variables */
+:root
+{
+    --main-color: #2F2F2F;
+    --secondary-color:#303131;
+    --font-header-color:#CCCCCC;
+    --font-content-color:#808899;
+    --color-dark: #042954;
+    --active-color:#FBD214;
+}
+/* end variables */
+/* start global rules  */
+*
+{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+.container
+{
+    padding:20px 50px;
+}
+h1,h2,i,h4
+{
+    color: var(--font-header-color);
+}
+p{
+    color: var(--font-content-color);
+}
+/* start header  */
+header
+{
+    background-color: var(--main-color);
+}
+header .container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+header .container div
+{
+    display: flex;
+    align-items: center;
+}
+.logo img
+{
+    width: 60px;
+    height: 50px;
+}
+nav ul
+{
+    list-style: none;
+    padding-right: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav ul li
+{
+    display: inline-block;
+    padding: 0 10px;
+}
+nav ul li a
+{
+    color: var(--font-content-color);
+}
+.active
+{
+    color: var(--active-color);
+}
+.orders ,.orders ul
+{
+    display: flex;
+}
+.orders ul
+{
+    margin-left: 110px;
+}
+.orders ul li
+{
+    padding: 0 20px;
+}
+.orders .lang
+{
+    display: none;
+}
+.orders ul,.orders a
+{
+    margin-left: 40px;
+}
+.orders a span
+{
+    padding-right:10px ;
+}
+.orders a
+{
+   border: .5px solid var(--active-color); 
+   padding: 10px 20px;
+   border-radius: 100px;
+}
+/* end header  */
+
+/* start home */
+#home,#about,#services,footer
+{
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+#home .container,#about .container,#skills .container,#services
+{
+    display: flex;
+}
+#home .txt
+{
+    padding-top: 100px;
+}
+#home .txt p,#about .container p
+{
+    padding-top: 10px;
+    line-height: 50px;
+}
+/* end home */
+
+/* strat sentains */
+#sentains,#skills
+{
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+/* end sentains */
+/* strat about */
+ 
+#about img
+{
+  width: 450px;
+  height: 100%;
+  transform: rotateY(
+    180deg
+    );}
+    #about .row
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+     
+/* end about */
+/* start skills */
+#skills
+{
+    text-align: right;
+    padding: 0%;
+    margin: 0;
+}
+#skills progress
+{
+    width: 500px;
+}
+#skills .txt{
+    padding: 0px 100px;
+}
+/* end skills */
+/* strat footer  */
+footer
+{
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+/* end foooter  */

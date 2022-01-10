@@ -6,129 +6,170 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Murad Hassan Ali Al-modia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>protfolia</title>
+    <title>protfolio</title>
+     <!--  google font  -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/all.min.css">
+      <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+      <!-- file normalize -->
+      <link rel="stylesheet" href="css/normalize.css">
+     <!-- main file -->
+     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- strat header  -->
     <header>
-        <!-- strat logo  -->
+        <div class="container">
+             <!-- strat logo  -->
+        <div>
         <div class="logo">
-            <img src="" alt="">
+            <img src="image/logo2 1.png" alt="">
         </div>
         <!-- end logo  -->
 
         <!-- strat nav  -->
         <nav>
             <ul>
-                <li><a href="">الرئيسية</a></li>
-                <li><a href="">عني</a></li>
-                <li><a href="">مهاراتي</a></li>
-                <li><a href="">خدماتي</a></li>
-                <li><a href="">اعمالي</a></li>
-                <li><a href="">التواصل</a></li>
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">عني</a></li>
+                <li><a href="#skills">مهاراتي</a></li>
+                <li><a href="#services">خدماتي</a></li>
+                <li><a href="proojects">اعمالي</a></li>
+                <li><a href="contact">التواصل</a></li>
             </ul>
         </nav>
+    </div>
         <!-- end nav  -->
 
         <!-- start order service  -->
-        <div>
+        <div class="orders">
             <ul>
                 <li>
-                    <ii></ii>
+                    <i class="fas fa-sun"></i>
                 </li>
                 <li>
-                    <ii></ii>
-                    <ul>
+                    <i class="fas fa-sun"></i>
+                    <ul class="lang">
                         <li>عربي</li>
                         <li>انجليزي</li>
                     </ul>
                 </li>
             </ul>
-            <a href="">طلب خدمة</a>
+            <a href="" class="active">طلب خدمة
             <span>
-                <i></i>
+                <i class="fas fa-shopping-cart"></i>
             </span>
+        </a>
         </div>
         <!-- end  order service  -->
+        </div>
+       
     </header>
     <!-- end haeder  -->
 
     <!-- satrt main  -->
     <main>
         <!-- strat genral  information -->
-        <section>
-            <div>
-                <h2>سلام عليكم</h2>
+        <section id="home">
+            <div class="container">
+            <div class="txt">
+                <h2 class="active">سلام عليكم</h2>
                 <h1>انا مراد حسن </h1>
                 <h2>
                     مصمم <span>UI/UX</span>
                     ومطور ويب 
                 </h2>
-                <p>اعمل كفري لانسر مصمم <span>UI/UX</span></p>
+                <p>اعمل كفري لانسر مصمم<span>UI/UX</span>ومطور ويب
                 ومطور ويب شغفي ب تصميم المواقع وتصميم التطبيقات ينبع بسبب الفيمة الكبيرة التي يمكن تقديمها لاي عمل تجاري في حال كانن لديه منتج مصمم بطريقة ممتازة جداً,جداً,جداً
+            </p>
             </div>
             <div>
-                <img src="" alt="" srcset="">
+                <img src="image/photo-person.svg" alt="" srcset="">
             </div>
+        </div>
         </section>
         <!-- end genral information -->
 
         <!-- start sentains  -->
-        <section>
-            <p>المصمم البارع هو  صاحب التفكير الفريد القادر على ايجاد حلول ابداعية</p>
+        <section id="sentains">
+            <div class="container">
+             <h1>المصمم البارع هو  صاحب التفكير الفريد القادر على ايجاد حلول ابداعية</h2>
+            </div>
         </section>
         <!-- end sentains  -->
 
         <!-- strat about me  -->
-        <section>
+        <section id="about">
+            <div class="container">
             <div>
-                <img src="" alt="" srcset="">
+                <img src="image/person.png" alt="" srcset="">
             </div>
             <div>
-                <h1>عني</h1>
+                <h1 class="active">عني</h1>
                 <p>لربما يكون من الصعب على التعبير عن ننفسي ليس توضعاً ولكن بسبب اهتماماتي وتجاربي الواسعة والمستمرة في التوسع دائماً فلا اعلم هل اعبر عن نفسي بأني رائد اعمال الذي لاتننتهي افكارة ام انني الفنان الذي يبدع في فنه وتحريكاته.</p>
-                <p>ولكن ربما نفسي اعشق التصميم في الاغلب لاني اجد التصميم  في كل شي وهذا انا حقاًً مهتم وشغوف  بكل شي واررى براعة التصميمم  في  كل شي </p>
-                <div>
-                   <div>
-                    <h4>
-                        <span>مصمم 
-                            <span>
-                                UI/UX
+                <p>ولكن ربما نفسي اعشق التصميم في الاغلب لاني اجد التصميم  في كل شي وهذا انا حقاًً مهتم وشغوف  بكل شي واررى براعة التصميمم  في  ك
+                  <div class="row">
+                    <div>
+                        <h4>
+                            <span>مصمم 
+                                <span>
+                                    UI/UX
+                                </span>
                             </span>
-                        </span>
-                        <span>
-                            <i></i>
-                        </span>
-                    </h4>
-                    <p>
-                        اقوم بتصميمم مواقع الويب وتطبيقات الموبايل
-                    </p>
-                   </div>
-                   <div>
-                    <h4>
-                        <span>مطور ويب</span>
-                        <span>
-                            <i></i>
-                        </span>
-                    </h4>
-                    <p>
-                        اقوم بتحويل تصميمك الى موقع حقيقي
-                    </p>
-                   </div>
+                            <span>
+                                <i></i>
+                            </span>
+                        </h4>
+                        <p>
+                            اقوم بتصميمم مواقع الويب وتطبيقات الموبايل
+                        </p>
+                       </div>
+                       <div>
+                        <h4>
+                            <span>مطور ويب</span>
+                            <span>
+                                <i></i>
+                            </span>
+                        </h4>
+                        <p>
+                            اقوم بتحويل تصميمك الى موقع حقيقي
+                        </p>
+                       </div>
+                  </div>  
                 </div>
             </div>
+        </div>
         </section>
         <!-- end about me  -->
 
         <!-- strat my skilles -->
-        <section>
-            <h1></h1>
-            <p></p>
+        <section id="skills">
+            <div class="container">
+                <div> 
+                    <label for="file">UI/UX</label>
+                    <br>
+                    <progress id="file" value="32" max="100"> 32% </progress>  
+                    <br>
+                    <label for="file">HTML</label>
+                    <br>
+                    <progress id="file" value="32" max="100"> 32% </progress> 
+                    <br>
+                    <label for="file"> CSS</label>
+                    <br>
+                    <progress id="file" value="32" max="100"> 32% </progress>                  
+                </div>
+                <div class="txt">
+                    <h1>مهاراتي</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempora voluptatibus nostrum dolorem officia eum impedit dignissimos quaerat quod ex, aliquid fuga quisquam? Assumenda tempore recusandae molestiae sed voluptatem?</p>
+                </div>
+            </div>
         </section>
         <!-- end my skilles  -->
 
         <!-- start my services  -->
-        <section>
+        <section id="services">
             <h1>خدماتي التي اقدمها</h1>
             <p>اهم الخدمات التي استطيع ان انفذها لك عزيز العميل هي الخدمات التالية:</p>
             <div>
@@ -197,7 +238,7 @@
         <!-- end my services -->
 
         <!-- strat my proojects -->
-        <section>
+        <section id="proojects">
             <h1>اعمالي التي قمت بها</h1>
             <p>هنا اعرض لك معرض اعمالي التي قمت بها فم بأخذ نظرة :</p>
             <div class="taps">
@@ -234,7 +275,7 @@
         <!-- end my proojects -->
 
         <!-- strat connaction -->
-        <section>
+        <section id="contact">
             <h1>التواصل</h1>
             <p>اسعد بتواصلكم الدائم</p>
             <div>
